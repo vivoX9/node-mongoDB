@@ -1,3 +1,6 @@
 controller为控制逻级
 public为公共模块
-用到express，body-praser,ejs
+node_modules为依赖
+static为静态资源图片
+views为ejs模块
+用到express，body-praser,ejs,mogoDB,node
