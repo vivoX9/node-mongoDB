@@ -1,0 +1,218 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+ol,
+dl,
+dt,
+th,
+td,
+input,
+textarea {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    border: none;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: #232323;
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: ".";
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+body {
+    background: #f2f2f2;
+    padding-top:1rem;
+}
+
+/* 头部整体 */
+header {
+    width: 100%;
+    height: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background: #25b99a;
+    box-shadow: 0 2px 4px rgba(44, 62, 80, 0.15);
+    border-radius: 0.05rem;
+    -webkit-border-radius: 0.05rem;
+    -moz-border-radius: 0.05rem;
+    -ms-border-radius: 0.05rem;
+    -o-border-radius: 0.05rem;
+}
+
+/* input框 */
+.input {
+    margin: 0 0.3rem;
+    margin-top: 0.2rem;
+    position: relative;
+}
+
+.add-input {
+    width: 100%;
+    height: 0.6rem;
+    text-indent: 0.16rem;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    border-top-right-radius: 0.15rem;
+    border-bottom-right-radius: 0.15rem;
+    border-top-left-radius: 0.05rem;
+    border-bottom-left-radius: 0.05rem;
+    color: #fff;
+}
+
+.add-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.input-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.input-btn-img {
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    
+}
+
+
+/*底部 */
+/* 底部未完成列表 */
+.unfull{
+    margin: 0.2rem 0.4rem;
+}
+.unfull-list li {
+    background: #fff;
+    border-radius:.05rem;
+    -webkit-border-radius: 0;
+    -moz-border-radius:.05rem;
+    -ms-border-radius:.05rem;
+    -o-border-radius:.05rem;
+    -webkit-border-radius:.05rem;
+    margin-bottom: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.unfull-list li p {
+    font-size: 0.24rem;
+    color: #333;
+    padding: 0.1rem 0;
+    text-indent: 0.2rem;
+    width: 80%;
+    line-height: 0.6rem;
+}
+
+.unfull .btn {
+    width: 20%;
+    height: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+
+.unfull .btn img {
+    width: 0.6rem;
+    height: 0.6rem;
+    margin-right: 0.2rem;
+}
+/* 分隔号 */
+.line{
+    font-size: 0.12rem;
+    color: red;
+   text-align: center;
+
+}
+/* 底部已完成列表 */
+/* 底部未完成列表 */
+.full{
+    margin: 0.2rem 0.4rem;
+}
+.full-list li {
+    background: #fff;
+    border-radius:.05rem;
+    -webkit-border-radius: 0;
+    -moz-border-radius:.05rem;
+    -ms-border-radius:.05rem;
+    -o-border-radius:.05rem;
+    -webkit-border-radius:.05rem;
+    margin-bottom: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.full-list li p {
+    font-size: 0.24rem;
+    color: #333;
+    padding: 0.1rem 0;
+    text-indent: 0.2rem;
+    width: 80%;
+}
+
+.full .btn {
+    width: 20%;
+    height:0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+
+.full .btn img {
+    width: 0.6rem;
+    height: 0.6rem;
+    margin-right: 0.2rem;
+}

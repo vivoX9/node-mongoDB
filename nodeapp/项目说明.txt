@@ -1,0 +1,3 @@
+controller为控制逻级
+public为公共模块
+用到express，body-praser,ejs

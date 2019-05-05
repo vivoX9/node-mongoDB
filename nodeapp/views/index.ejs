@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 为什么herf不写../../assets/style.css因
+        为在app.js中app.use已经将public当做模块使用了，
+        会自动找到style.css -->
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/flexible.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="input">
+            <input type="text" placeholder="请输入添加的内容..." class="add-input">
+            <div class="input-btn">
+                <img src="/images/input-add.svg" alt="" class="input-btn-img">
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <!-- 未完成列表 -->
+        <div class="unfull">
+            <ul class="unfull-list" id="unfull-list">
+                <% for(var i=0;i<item.length;i++){%>
+                    <li>
+                        <p> <%= item[i].item %></p>
+                        <div class="btn">
+                            <img src="/images/rabsh-one.svg" alt="" class="remove">
+                            <img src="/images/add-one.svg" alt="" class="add">
+                        </div>
+                    </li>
+                <% }%>
+
+            </ul>
+        </div>
+        <!-- 分隔号 -->
+        <div class="line">-----------------------------------------------------</div>
+        <!-- 完成列表 -->
+        <div class="full">
+            <ul class="full-list" id="full-list">
+            </ul>
+        </div>
+    </div>
+    <!-- 引入jq -->
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script src="assets/style.js"></script>
+</body>
+
+</html>
